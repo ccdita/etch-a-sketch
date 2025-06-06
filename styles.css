@@ -1,0 +1,17 @@
+.divRow {
+    /*Orient squares in row horizontally*/
+    display: flex; 
+    background-color: black;  
+}
+
+.divColumn {
+    background-color: green; 
+    /*Square height takes up 100% of the row's height. Even if .divRow doesn't have a specified height, flex: 1 means that
+      the squares take up horizontal space in the row equally. Their height is 1/1 to the width, so their height = width
+    */
+    flex: 1;
+    height: 100%; 
+    aspect-ratio: 1/1; 
+    margin: 1px;
+}
+
