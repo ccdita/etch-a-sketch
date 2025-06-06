@@ -1,9 +1,9 @@
+The goal of this project is to create an 'Etch-A-Sketch' web application using HTML, CSS (+ Flexbox), and JavaScript. This project was accomplished using the aforementioned languages.
+
 Challenges:
-Making a grid of squares
-- Had to review flexbox after 2 weeks
-- First attempted to make a continuous line of squares and then have them wrap to new lines to form a proper grid using flex and properties such as height and width
-- First attempt did not work so instead implemented for loops that made divs (rows and columns/squares)
+- I had to review Flexbox after not working with it for 2 weeks. Those 2 weeks were spent studying JavaScript.
+- I initially had difficulty implementing the grid. I first attempted to do so by creating a continuous line of divs that wrapped to new lines to form a proper grid using flex and properties such as height and width. However, this did not work so I opted to using for loops that made rows and columns of divs. This method worked as I did not need to worry about potential wrapping issues whenever the grid's size changed.
 
 Learned:
-- Why script tag is put at end of HTML body (DOM loading)
-- flex: 1's and aspect-ratio: 1/1's effect on width and height of children
+- I learned why the <script></script> tag is added at the end of the HTML body. This placement allows the DOM to fully load before JavaScript code is run. I learned that putting the script tag in the head will not work for the same reason either.
+- When struggling to implement the grid, I learned reinforced the fact that flex: 1 allows children elements to take up the horizontal space of their container. This property, coupled with 'aspect-ratio: 1/1,' gave me square divs for the grid.
