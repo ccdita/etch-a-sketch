@@ -1,3 +1,19 @@
+#gridContainer {
+  height: 90vh;
+  aspect-ratio: 1/1;
+  margin: auto;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-canvas {
+  margin: 8px;
+}
+
 .div-row {
     /*Orient squares in row horizontally*/
     display: flex; 

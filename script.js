@@ -1,6 +1,6 @@
 let dim = 16;
 // Select div that will contain the grid
-const divContainer = document.querySelector("#container");
+const gridContainer = document.querySelector("#gridContainer");
 
 // Select button that creates new canvas upon being clicked
 const newCanvasBtn = document.querySelector("#new-canvas");
@@ -14,7 +14,7 @@ newCanvasBtn.addEventListener("click", () => {
         input = +(prompt("Enter size of new canvas (8-100):"));
     } while (Number.isNaN(input) || input < min || input > max);
     // Remove the old grid
-    divContainer.innerHTML = "";
+    gridContainer.innerHTML = "";
     // Create a new grid based on the user's input
     createGrid(input);
 });
@@ -48,7 +48,7 @@ function createGrid(dim) {
             })
             divRow.appendChild(divColumn);
         }
-        divContainer.appendChild(divRow);
+        gridContainer.appendChild(divRow);
     }
 }
 
